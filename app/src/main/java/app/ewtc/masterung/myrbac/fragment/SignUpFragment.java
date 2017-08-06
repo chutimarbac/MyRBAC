@@ -55,8 +55,8 @@ public class SignUpFragment extends Fragment {
                 EditText passwordEditText = getView().findViewById(R.id.edtPassword);
 
                 nameString = nameEditText.getText().toString().trim();
-                userString = nameEditText.getText().toString().trim();
-                passwordString = nameEditText.getText().toString().trim();
+                userString = userEditText.getText().toString().trim();
+                passwordString = passwordEditText.getText().toString().trim();
                 MyAlert myAlert = new MyAlert(getActivity());
 
                 //Check Space
@@ -84,7 +84,7 @@ public class SignUpFragment extends Fragment {
             postUserToServer.execute(nameString,
                     userString,
                     passwordString,
-                    "http://androidthai.in.th/rbac/addDataMaster123.php");
+                    "http://androidthai.in.th/rbac/addDataChu.php");
             String strResult= postUserToServer.get();
             Log.d("6AugV1", "Result ==> "+strResult);
 
