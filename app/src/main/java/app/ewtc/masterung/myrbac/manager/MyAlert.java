@@ -21,7 +21,7 @@ public class MyAlert {
     public void myDialog(String strTitle, String strMessage) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setCancelable(false);
-        builder.setIcon(R.mipmap.ic_name);
+        builder.setIcon(R.mipmap.ic_alert);
         builder.setTitle(strTitle);
         builder.setMessage(strMessage);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
